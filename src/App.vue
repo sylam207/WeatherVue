@@ -29,7 +29,6 @@ export default {
   data() {
     return {
       api_key: process.env.VUE_API,
-      url: process.env.VUE_APP_SERVICE_URL,
       query: '',
       weather: {}
     }
@@ -38,7 +37,7 @@ export default {
   methods: {
     fetchWeather(e) {
       if(e.key == "Enter") {
-        fetch(`${this.url}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
           .then(res => {
             return res.json();
           }).then(this.setResults);
