@@ -28,7 +28,7 @@ export default {
 
   data() {
     return {
-      api_key: '077e14ac506c4ff05faddece386e4162',
+      api_key: process.env.VUE_API,
       query: '',
       weather: {}
     }
