@@ -28,7 +28,7 @@ export default {
 
   data() {
     return {
-      api_key: process.env.VUE_API,
+      api_key: '077e14ac506c4ff05faddece386e4162',
       query: '',
       weather: {}
     }
@@ -126,7 +126,7 @@ main {
 
 .location-box {
   .location {
-    color: #fff;
+    color: rgb(9, 229, 236);
     font-size: 32px;
     font-weight: 500;
     text-align: center;
@@ -148,7 +148,7 @@ main {
   .temp {
     display: inline-block;
     padding: 10px 25px;
-    color: #FFF;
+    color: rgb(9, 229, 236);
     font-size: 102px;
     font-weight: 900;
     text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
